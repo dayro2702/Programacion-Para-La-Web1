@@ -1,6 +1,30 @@
 const btnAgregar = document.getElementById("btnAgregar");
 const tablaBody = document.querySelector("#tabla tbody");
 const totalGeneral = document.getElementById("totalGeneral");
+const imagenes = {
+  Arroz: "imgs/arroz.jpg",
+  Aceite: "imgs/Aceite.jpg",
+  Panela: "imgs/Panela.jpg",
+  Cafe: "imgs/Cafe.jpg",
+  Sal: "imgs/Sal.jpg",
+  Azucar: "imgs/azucar.jpg",
+  Leche: "imgs/Leche.jpg",
+  Huevos: "imgs/Huevos.jpg",
+  Frijoles: "imgs/Frijoles.jpg",
+  Lentejas: "imgs/lentejas.jpg"
+};
+
+const selectProducto = document.getElementById("nombre");
+const imgProducto = document.getElementById("imgProducto");
+
+function actualizarImagen() {
+  imgProducto.src = imagenes[selectProducto.value];
+}
+
+selectProducto.addEventListener("change", actualizarImagen);
+
+// Mostrar la imagen del primer producto al cargar
+actualizarImagen();
 
 btnAgregar.addEventListener("click", () => {
   const nombre = document.getElementById("nombre").value;

@@ -101,3 +101,9 @@ li p {
 .empty {
   color: rgb(47, 79, 50);
 }
+
+p {
+  margin-top: 20px;
+  color: rgb(47, 79, 50);
+  text-align: center;
+}
