@@ -1,0 +1,81 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+body{
+    background:#000000;
+}
+
+header{
+    background:#3f4246;
+    color:rgb(245, 222, 15);
+    text-align:center;
+    padding:20px;
+}
+
+main{
+    width:80%;
+    margin:30px auto;
+}
+
+.formulario,
+.resultado{
+    background:rgb(80, 75, 75);
+    color: rgb(245, 222, 15);
+    padding:25px;
+    margin-bottom:25px;
+    border-radius:10px;
+    box-shadow:0 2px 8px rgba(0,0,0,0.2);
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+label{
+    display:block;
+    margin-top:15px;
+    margin-bottom:5px;
+}
+
+input,
+select{
+    width:100%;
+    padding:10px;
+    border:1px solid #ccc;
+    border-radius:5px;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 20px;
+    background:rgb(245, 222, 15);
+    color:rgb(0, 0, 0);
+    border:none;
+    border-radius:5px;
+    cursor:pointer;
+}
+
+button:hover{
+    background:#070707;
+    color: white;
+}
+
+#resultado{
+    margin-top:15px;
+    font-size:18px;
+}
+
+#cambio{
+    margin-top:20px;
+    font-size:18px;
+}
+
+footer {
+    font-size: 15px;
+    text-align: center;
+    color: white;
+}

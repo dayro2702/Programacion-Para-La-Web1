@@ -11,7 +11,17 @@ const imagenes = {
   Leche: "imgs/Leche.jpg",
   Huevos: "imgs/Huevos.jpg",
   Frijoles: "imgs/Frijoles.jpg",
-  Lentejas: "imgs/lentejas.jpg"
+  Lentejas: "imgs/lentejas.jpg",
+  Harina: "imgs/Harina.jpg",
+  Mantequilla: "imgs/mantequilla.jpg",
+  Avena: "imgs/Avena.jpg",
+  Queso: "imgs/Queso.jpg",
+  Yogurt: "imgs/yogurt.jpg",
+  Maggi: "imgs/Maggi.jpg",
+  Ricostilla: "imgs/Ricostilla.jpg",
+  Tostadas: "imgs/Tostadas.jpg",
+  Atun: "imgs/Atun.jpg",
+  Compota: "imgs/compota.jpg"
 };
 
 const selectProducto = document.getElementById("nombre");
