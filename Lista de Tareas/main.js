@@ -15,6 +15,7 @@ addBtn.addEventListener("click", (e) => {
 
     li.appendChild(p);
     li.appendChild(addDeleteBtn());
+    li.appendChild(addEditBtn(p));
     ul.appendChild(li);
 
     input.value = "";
@@ -40,4 +41,21 @@ function addDeleteBtn() {
   });
 
   return deleteBtn;
+}
+
+function addEditBtn(parrafo) {
+  const editBtn = document.createElement("button");
+
+  editBtn.textContent = "EDIT";
+  editBtn.className = "btn-edit";
+
+  editBtn.addEventListener("click", () => {
+    const nuevoTexto = prompt("Editar plan:", parrafo.textContent);
+
+    if (nuevoTexto !== null && nuevoTexto.trim() !== "") {
+      parrafo.textContent = nuevoTexto;
+    }
+  });
+
+  return editBtn;
 }
